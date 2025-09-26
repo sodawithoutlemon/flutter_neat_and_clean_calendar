@@ -711,6 +711,7 @@ class _CalendarState extends State<Calendar> {
 
         if (this.widget.dayBuilder != null) {
           // Use the dayBuilder widget passed as parameter to render the date tile
+          Widget? customDay; // <-- burayı ekle
 
           customDay = widget.dayBuilder!(context, day);
             
