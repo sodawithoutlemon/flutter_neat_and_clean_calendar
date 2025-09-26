@@ -711,6 +711,13 @@ class _CalendarState extends State<Calendar> {
 
         if (this.widget.dayBuilder != null) {
           // Use the dayBuilder widget passed as parameter to render the date tile
+
+          customDay = widget.dayBuilder!(context, day);
+            
+          if (customDay is! Widget) {
+            customDay = null;
+          }
+        
           dayWidgets.add(
             NeatCleanCalendarTile(
               defaultDayColor: widget.defaultDayColor,
@@ -721,7 +728,7 @@ class _CalendarState extends State<Calendar> {
               eventColor: widget.eventColor,
               eventDoneColor: widget.eventDoneColor,
               events: eventsMap![day],
-              child: widget.dayBuilder!(context, day),
+              child: customDay,
               date: day,
               onDateSelected: () => handleSelectedDateAndUserCallback(day),
             ),
