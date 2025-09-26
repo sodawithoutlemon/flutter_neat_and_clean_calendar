@@ -1105,13 +1105,6 @@ class _CalendarState extends State<Calendar> {
                   children: [
                     Text(event.summary,
                         style: Theme.of(context).textTheme.bodySmall),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      event.description,
-                      overflow: TextOverflow.ellipsis,
-                    )
                   ],
                 ),
               ),
