@@ -732,7 +732,7 @@ class _CalendarState extends State<Calendar> {
               child: customDay,
               date: day,
               onDateSelected: () => handleSelectedDateAndUserCallback(day),
-              dateStyles: (customDay == null)?(onfigureDateStyle(monthStarted, monthEnded)):null,
+              dateStyles: (customDay == null)?(configureDateStyle(monthStarted, monthEnded)):null,
               isSelected: (customDay == null)?(Utils.isSameDay(selectedDate, day)):false,
               inMonth: (customDay == null)?(day.month == selectedDate.month):true
             )
