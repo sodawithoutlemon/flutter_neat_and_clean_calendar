@@ -1053,7 +1053,7 @@ class _CalendarState extends State<Calendar> {
   Widget eventCell(NeatCleanCalendarEvent event, String start, String end) {
     return Container(
       height:
-          widget.eventTileHeight ?? MediaQuery.of(context).size.height * 0.08,
+          widget.eventTileHeight ?? MediaQuery.of(context).size.height * 0.07,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: () {
@@ -1098,7 +1098,7 @@ class _CalendarState extends State<Calendar> {
             Expanded(
               flex: 60,
               child: Padding(
-                padding: const EdgeInsets.only(top: 0.0, bottom: 0.0, left: 8.0, right: 8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
