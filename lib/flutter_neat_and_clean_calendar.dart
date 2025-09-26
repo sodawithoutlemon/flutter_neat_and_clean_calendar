@@ -735,8 +735,7 @@ class _CalendarState extends State<Calendar> {
               dateStyles: (customDay == null)?configureDateStyle(monthStarted, monthEnded):null,
               isSelected: (customDay == null)?Utils.isSameDay(selectedDate, day):null,
               inMonth: (customDay == null)?day.month == selectedDate.month:null
-            ),      
-            ),
+            )
           );
         } else {
           dayWidgets.add(
