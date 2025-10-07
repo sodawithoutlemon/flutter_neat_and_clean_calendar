@@ -1053,7 +1053,7 @@ class _CalendarState extends State<Calendar> {
   Widget eventCell(NeatCleanCalendarEvent event, String start, String end) {
     return Container(
       height:
-          widget.eventTileHeight ?? MediaQuery.of(context).size.height * 0.07,
+          widget.eventTileHeight ?? MediaQuery.of(context).size.height * 0.08,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: () {
